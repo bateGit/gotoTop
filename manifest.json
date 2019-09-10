@@ -2,7 +2,7 @@
 	"manifest_version": 2,
 	"name": "回到顶部",
 	"version": "1.0",
-	"description": "用于见面中，补充回到顶部按钮",
+	"description": "用于网页中，快速回到顶部按钮",
 	"author": "bate",
 	"icons":
 	{
