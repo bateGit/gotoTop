@@ -1,0 +1,29 @@
+{
+	"manifest_version": 2,
+	"name": "回到顶部",
+	"version": "1.0",
+	"description": "用于见面中，补充回到顶部按钮",
+	"author": "bate",
+	"icons":
+	{
+		"48": "icon.png",
+		"128": "icon.png"
+	},
+	"browser_action": 
+	{
+		"default_icon": "icon.png",
+		"default_popup": "gotoTop.html"
+	},
+	"content_scripts": 
+	[
+		{
+			"matches": ["https://*/*", "http://*/*"],
+			"js": ["content-script.js"],
+			"css": ["content-css.css"]
+		}
+	],
+	"web_accessible_resources": 
+	[
+		"inject.js"
+	]
+}
